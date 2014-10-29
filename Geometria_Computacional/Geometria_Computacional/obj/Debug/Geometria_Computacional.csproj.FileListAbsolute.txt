@@ -1,1 +1,9 @@
 C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\bin\Debug\Geometria_Computacional.exe.config
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.csprojResolveAssemblyReference.cache
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.Form1.resources
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.Properties.Resources.resources
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.csproj.GenerateResource.Cache
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\bin\Debug\Geometria_Computacional.exe
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\bin\Debug\Geometria_Computacional.pdb
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.exe
+C:\Users\Marcos López\Documents\GitHub\Geometria-Computacional-C-\Geometria_Computacional\Geometria_Computacional\obj\Debug\Geometria_Computacional.pdb
