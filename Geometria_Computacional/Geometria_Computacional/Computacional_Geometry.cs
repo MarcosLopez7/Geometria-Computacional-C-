@@ -31,8 +31,6 @@ namespace Geometria_Computacional
             this.maxX = mx;
         }
 
-        
-
         public void setImage()
         {
             imagen.Image = bmp;
