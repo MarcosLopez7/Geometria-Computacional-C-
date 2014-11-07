@@ -14,7 +14,7 @@ namespace Geometria_Computacional
         public Line() { }
         public Line(PictureBox i, int my, int mx) 
         {
-            this.bmp = new Bitmap(640, 480);
+            this.bmp = new Bitmap(my, mx);
             this.imagen = i;
             this.maxY = my;
             this.maxX = mx;

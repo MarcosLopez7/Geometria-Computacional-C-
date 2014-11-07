@@ -15,55 +15,41 @@ namespace Geometria_Computacional
         public Circle() { }
         public Circle(PictureBox i, int my, int mx) 
         {
-            this.bmp = new Bitmap(640, 480);
+            this.bmp = new Bitmap(my, mx);
             this.imagen = i;
             this.maxY = my;
             this.maxX = mx;
         }
 
-        private int CirclePoint(int x, int y, int [] puntos, int i)
+       
+
+        public void MidPointCircle(int x0, int y0, int radius)
         {
-            bmp.SetPixel(maxX + x, maxY + y, Color.FromArgb(0, 0, 0));
 
-            puntos[i] = maxX + x;
-            puntos[i + 1] = maxY + y;
-            i += 2;
+            int x = radius;
+            int y = 0;
+            int radiusError = 1 - x;
 
-            bmp.SetPixel(maxX + y, maxY + x, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX - x, maxY + y, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX + y, maxY - x, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX + x, maxY - y, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX - y, maxY + x, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX - x, maxY - y, Color.FromArgb(0, 0, 0));
-            bmp.SetPixel(maxX - y, maxY - x, Color.FromArgb(0, 0, 0));
-
-            return i;
-        }
-
-        public int MidPointCircle(int radius, int [] puntos)
-        {
-            int x = 0;
-            int y = radius;
-            double p = 5.0 / 4.0 - radius;
-            int i = 0;
-            i = CirclePoint(x, y, puntos, i);
-
-            while(y > x)
+            while (x >= y)
             {
-                if (p < 0)
-                    p += 2.0 * x + 1.0;
+                bmp.SetPixel(x + x0, y + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(y + x0, x + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(-x + x0, y + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(-y + x0, x + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(-x + x0, -y + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(-y + x0, -x + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(x + x0, -y + y0, Color.FromArgb(0, 0, 0));
+                bmp.SetPixel(y + x0, -x + y0, Color.FromArgb(0, 0, 0));
+
+                y++;
+                if (radiusError < 0)
+                    radiusError += 2 * y + 1;
                 else
                 {
-                    p += 2.0 * (x - y) + 1.0;
-                    y--;
+                    x--;
+                    radiusError += 2 * (y - x + 1);
                 }
-
-                x++;
-
-                i = CirclePoint(x, y, puntos, i);
             }
-
-            return i;
         }
 
     }
